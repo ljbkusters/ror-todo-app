@@ -1,0 +1,26 @@
+<div id="<%= dom_id todo %>", class="card p-3 my-1">
+  <p class="h1">
+    <%= todo.title %>
+  </p>
+  <hr>
+
+  <p>
+    <%= todo.details %>
+  </p>
+
+  <p>
+    <strong>Created:</strong>
+    <%= todo.creation_date %>
+    </br>
+    <strong>Due:</strong>
+    <%= todo.due_date %>
+    </br>
+    <strong>Is completed:</strong>
+    <%= todo.is_completed %>
+  </p>
+
+  <p>
+    <%= link_to "Show this todo", todo, class:"btn btn-primary" %>
+  </p>
+
+</div>

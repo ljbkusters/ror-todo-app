@@ -1,0 +1,9 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @todo %>
+
+<div class="btn-group">
+  <%= link_to "Edit", edit_todo_path(@todo), class:"btn btn-sm btn-primary" %>
+  <%= link_to "Back to todos", todos_path, class:"btn btn-sm btn-secondary" %>
+  <%= button_to "Delete", @todo, method: :delete, class:"btn btn-sm btn-danger" %>
+</div>
